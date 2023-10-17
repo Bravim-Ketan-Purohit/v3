@@ -54,7 +54,7 @@ const listingSchema = new Schema({
   },
   userRef: {
     type: String,
-    // required: true,
+    required: true,
   },
   createdAt: {
     type: Date,

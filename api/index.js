@@ -5,6 +5,8 @@ import userRouter from "./routes/user.route.js";
 import authRouter from "./routes/auth.route.js";
 import cookieParser from "cookie-parser";
 import listingRouter from "./routes/listing.route.js";
+import cors from "cors";
+
 
 const app = express();
 mongoose.connect(
@@ -17,7 +19,7 @@ mongoose.connect(
 });
 
 app.use(cookieParser());
-
+app.use(cors())
 app.listen(3000,()=>{
     console.log('server running on port 3000 !');
 })
