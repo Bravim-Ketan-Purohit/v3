@@ -343,7 +343,7 @@ export default function CreateListing() {
               </div>
             ))}
           <button className="p-3 bg-slate-700 text-white rounded-lg uppercase hover:opacity-95 disabled:opacity-80">
-            Create Listing
+            Generate Report
           </button>
         </div>
       </form>
